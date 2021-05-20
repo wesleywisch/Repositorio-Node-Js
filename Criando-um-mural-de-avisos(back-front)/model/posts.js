@@ -3,7 +3,7 @@ module.exports = {
         {
             id: "djfkasbdjfbjsd",
             title: "Teste do mural",
-            descripiton: "Descrição teste"
+            description: "Descrição teste"
         },
     ], // dados ficticios
 
@@ -11,9 +11,9 @@ module.exports = {
         return this.posts;
     },
 
-    newPost(title, descripiton){
+    newPost(title, description){
 
-        this.posts.push({ id: generateID(), title, descripiton});
+        this.posts.push({ id: generateID(), title, description});
 
     },
 

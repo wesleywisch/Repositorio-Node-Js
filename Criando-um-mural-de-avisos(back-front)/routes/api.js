@@ -14,9 +14,9 @@ router.get("/all", (req,res)=>{
 
 router.post("/new", express.json(), (req,res)=>{
     let title = req.body.title;
-    let descripiton = req.body.descripiton;
+    let description = req.body.description;
 
-    posts.newPost(title, descripiton);
+    posts.newPost(title, description);
 
 
     res.send("Post adicionado");
