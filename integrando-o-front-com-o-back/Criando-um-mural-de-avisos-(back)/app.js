@@ -1,27 +1,16 @@
 const express = require('express');
 const app = express();
 const PORT = 3000;
+const path = require('path');
+const apiRouter = require('./routes/api')
 
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-
-let posts = [
-    {id: "djfkasbdjfbjsd", 
-    title: "Teste do mural",
-    descripiton: "Descrição teste"},
-]; // dados ficticios
+// para garantir que uma chamada a api não busque por uma pasta chamada api, devemos inverter a chamada das rotas.
+app.use('/api', apiRouter);
+app.use('/', express.static(path.join(__dirname, "public")));
 
 
 
-app.get("/all", (req,res)=>{
-
-    res.json(JSON.stringify(posts));
-
-}); // nessa rota irá retornar todos os post disponiveis
-
-app.post("/new", (req,res)=>{});
 
 
 app.listen(PORT, ()=>{
