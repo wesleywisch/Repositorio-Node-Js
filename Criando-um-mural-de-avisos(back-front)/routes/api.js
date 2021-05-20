@@ -1,6 +1,15 @@
 const express = require('express');
 const router = express.Router();
 const posts = require('../model/posts');
+const cors = require('cors');
+const options = {
+    origin: "http://localhost:3000" // por segurança se la no meu script estiver localhost aqui passarei outro no caso o ipv4, se la no script estiver o ipv4 aqui passarei o locahost.
+
+    // por segurança irrei deixar os 2 com localhost, mais eu sei que é necessario mudar.
+}
+
+
+router.use(cors(options));
 
 router.use(express.json());
 router.use(express.urlencoded({ extended: true }));

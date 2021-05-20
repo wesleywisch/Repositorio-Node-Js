@@ -12,7 +12,7 @@ function updatePosts() {
         let postElements = '';
 
         let posts = JSON.parse(json);
-        posts.forEach((post)=>{
+        posts.forEach((post) => {
             let postElement = `
             <div class="card mb-4" id=${post.id}>
                 <div class="card-header">
@@ -32,6 +32,24 @@ function updatePosts() {
 };
 
 function newPost() {
+
+    let title = document.getElementById("title").value;
+    let description = document.getElementById("desc").value;
+
+    let post = { title, description };
+
+    const options = {
+        method: "POST",
+        headers: new Headers({ 'content-type': 'application/json' }),
+        body: JSON.stringify(post)
+    };
+
+    fetch("http://localhost:3000/api/new", options).then(res => { // invez de colocar no localhost colocar o ipv4 do computador
+        console.log(res);
+        updatePosts();
+        document.getElementById("title").value = "";
+        document.getElementById("desc").value = "";
+    });
 
 };
 
