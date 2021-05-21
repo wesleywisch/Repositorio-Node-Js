@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário</title>
+</head>
+<body>
+    
+    <%- include ('./partials/navbar', {title: "Users"})%>
+
+
+    <% for(let user of users){%>
+
+        <%if(user.id %2 == 0) {%> <!--se for um id de numero par mostrar na tela se não, não mostrar-->
+
+            <h1><%=user.name%></h1> <!--É obrigatorio colocar o igual pois se não ele nao mostra-->
+            <h3><%=user.phone%></h3>
+
+        <%}%>
+
+    <%}%>
+</body>
+</html>
