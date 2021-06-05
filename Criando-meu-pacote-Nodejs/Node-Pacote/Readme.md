@@ -4,6 +4,7 @@
 
 
   <h2 id="sobre"> 📋 Sobre o projeto</h2>
+  
 Nesse modulo de node NodeJs sempre começando pela base, aprendi a como criar o meu pacote com o comando: ```npm init```, e nesse pacote criei um pacote bem básico sobre operações matemáticas como soma, multiplicação, divisão e subtração. E também sobre áreas, como a área de um quadrado, retângulo e triangulo e o circulo.
 
 <h3 id="aplicacao">  🎲  Acessando esse pacote: </h3>
