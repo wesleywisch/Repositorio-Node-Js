@@ -6,18 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Mural</title>
+
+    <style>
+        .inputs input{
+            width: 40%;
+            height: 40px;
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            display: block;
+        }
+        .inputs button{
+           margin-left: 50%;
+           transform: translateX(-50%);
+            width: 30%;
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
-        <h3>Novo Post</h3>
-        <div>
+        <h2 class="text-center mt-4">Novo Post</h2>
+        <div class="inputs">
             <input type="text" id="title" placeholder="Título">
             <input type="text" id="desc" placeholder="Descrição">
-            <button onclick="newPost()">Salvar</button>
+            <button class="btn btn-success" onclick="newPost()">Salvar</button>
         </div>
 
-        <h2 class="mt-4">Mural</h2>
+        <h2 class="text-center mb-2 mt-4">Mural</h2>
 
         <div id="posts">
             <!--Aki ficaram os posts, so que gerador no javascript-->
