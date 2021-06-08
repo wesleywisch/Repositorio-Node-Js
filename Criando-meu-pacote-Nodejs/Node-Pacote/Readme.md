@@ -23,7 +23,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 ```
 # Clone este repositório
 
-$ git clone https://github.com/wesleywisch/Repositorio-Node-Js
+$ git clone https://github.com/wesleywisch/Repositorio-Node-Js.git
 
   
 # Acesse a pasta do projeto no terminal
