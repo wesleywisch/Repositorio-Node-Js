@@ -39,7 +39,7 @@ $ e pronto ela estará redimenionada e estará na pasta (compressed)
 ```
 
 ![Imagem normal](https://user-images.githubusercontent.com/79159487/120938368-5a023480-c6e0-11eb-85be-0c00787b4555.png)
-![imagem compactando](https://user-images.githubusercontent.com/79159487/120938372-5c648e80-c6e0-11eb-9ee4-b056e8c4007e.png)
+![paiagem2 node](https://user-images.githubusercontent.com/79159487/121233735-edfb0a00-c860-11eb-9cf4-3d88c07de7bf.png)
 ![imagem compactada](https://user-images.githubusercontent.com/79159487/120938374-5e2e5200-c6e0-11eb-8553-1a43e60c626e.png)
 
 
